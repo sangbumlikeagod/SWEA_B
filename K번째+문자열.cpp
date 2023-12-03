@@ -97,6 +97,7 @@ int main() {
             result("none", test_case);
         }
     }
+    cout << '\n';
 
     return 0;
 }
