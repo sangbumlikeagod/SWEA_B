@@ -1,0 +1,96 @@
+<mxfile host="Electron" modified="2023-12-07T13:26:43.188Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="rSMfJzGCGNOJ1dCLWCci" version="22.1.2" type="device">
+  <diagram name="페이지-1" id="nX3qnI_A7cCaZvHu2Gjx">
+    <mxGraphModel dx="2375" dy="1748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-1" target="Xd6IAp-0N0bOBobcrJcN-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-1" value="새로운 노드 추가(Node)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-2" target="Xd6IAp-0N0bOBobcrJcN-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-2" target="Xd6IAp-0N0bOBobcrJcN-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-2" target="Xd6IAp-0N0bOBobcrJcN-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-2" value="링크드리스트" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="60" y="180" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-5" target="Xd6IAp-0N0bOBobcrJcN-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-5" value="새로운 노드를 리스트에 추가" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-8" target="Xd6IAp-0N0bOBobcrJcN-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-8" target="Xd6IAp-0N0bOBobcrJcN-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-8" target="Xd6IAp-0N0bOBobcrJcN-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-8" target="Xd6IAp-0N0bOBobcrJcN-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-8" value="기본 객체" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-10" value="Node* head" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-11" value="Node* tail" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-13" value="Vector&amp;lt;Node&amp;gt; Nodearr" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-14" value="int Nodenum" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Xd6IAp-0N0bOBobcrJcN-21" target="Xd6IAp-0N0bOBobcrJcN-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-21" value="head == nullptr" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="465" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-22" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="720" y="543" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-23" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="870" y="455" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-29" value="head = Node" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="940" y="465" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-30" value="tail = Node" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="940" y="543" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-31" value="tail.next = Node&lt;br&gt;tail = Node" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="585" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-34" value="Nodearr[Nodenum] = new Node()" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="690" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-35" value="Nodenum++" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="840" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xd6IAp-0N0bOBobcrJcN-36" value="특정위치에 여러개의 노드 설치" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

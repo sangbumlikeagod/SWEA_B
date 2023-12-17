@@ -97,7 +97,6 @@ int main() {
             result("none", test_case);
         }
     }
-    dfdfㄹㅇㄹ
     cout << '\n';
 
     return 0;
