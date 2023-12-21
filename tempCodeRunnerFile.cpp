@@ -1,8 +1,3 @@
-        // for (int i = 0; i < N; i++)
-        // {
-        //     for (int j = 0; j < N; j++)
-        //     {   
-        //         cout << forZero[i][j] << ' ';
-        //     }
-        //     cout << '\n';
-        // }
+
+        if (matrix[nowCopy->nodeNum][nextCopy->nodeNum]) { 
+            cout << "생략" << '\n';
