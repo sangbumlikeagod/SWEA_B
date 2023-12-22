@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-12-21T14:32:12.932Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="gT1EtX-CiSF3B01ZPz_k" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2023-12-21T14:52:55.685Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="JlOomCpsNf8M_TURgLuz" version="22.1.2" type="device">
   <diagram name="페이지-1" id="ClO-R2YQsogOa_VZYLcQ">
-    <mxGraphModel dx="1291" dy="812" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1671" dy="1051" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -233,7 +233,7 @@
             <mxRectangle width="100" height="143" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-130" value="maxheight을 만드는데 똑같이 O(N ^ 2 )가 걸림&lt;br&gt;1자일경우 그렇다." style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;flipH=1;" vertex="1" parent="__8k_Y0SE8ekspQ6roql-127">
+        <mxCell id="__8k_Y0SE8ekspQ6roql-130" value="maxheight을 만드는데 똑같이 O(N ^ 2 )가 걸림&lt;br&gt;1자일경우 그렇다.&lt;br&gt;&lt;br&gt;각 레벨별로&amp;nbsp;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=center;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;flipH=1;" vertex="1" parent="__8k_Y0SE8ekspQ6roql-127">
           <mxGeometry x="200" width="250" height="143" as="geometry">
             <mxRectangle width="250" height="143" as="alternateBounds" />
           </mxGeometry>
@@ -251,32 +251,17 @@
         <mxCell id="__8k_Y0SE8ekspQ6roql-136" value="&lt;h1&gt;간선 중심 간선 지나가는 횟수&amp;nbsp;&lt;/h1&gt;&lt;p&gt;1. 루트를 기준으로 자식의 간선이 몇 번 나오는지를 확인하는 방 법&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;2. 루트를 기준으로 자기위의 간선이 몇 번 나오는지를 확인하는 방법&lt;/p&gt;&lt;p&gt;내 기준으로 이 간선이 쓰이기 위해선 나와 연결된 바로 밑 노드가 직접 2번 =&amp;gt; 심지어 내 자식이 next일 때는 1번만 불림&lt;/p&gt;&lt;p&gt;노드의 자식중 (맨오른쪽) 자식의 next가 내 노드의 자식의&amp;nbsp; 아닌 다른 형제의 자식일때 1번&amp;nbsp;&lt;/p&gt;&lt;p&gt;내 노드 각 레벨 자식중 맨 왼쪽이 내 노드의 자식이 아닌 다른 형제자식의 next일 때&amp;nbsp;&lt;/p&gt;&lt;p&gt;심지어 각 레벨마다 반복해줘야함&amp;nbsp;&lt;/p&gt;&lt;p&gt;이걸 제시간에 알 수 있는 방법이 있음?&amp;nbsp;&lt;/p&gt;&lt;p&gt;100억번을 더 간단하게 저장하던가 아니면&amp;nbsp;&lt;/p&gt;&lt;p&gt;부모를 대조하면서 나랑 같은지 확인하는 방법이있음 =&amp;gt; 시간문제가 있음&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="195" y="1510" width="595" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-137" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="930" y="1500" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-138" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="850" y="1640" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-139" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="1640" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-140" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="1790" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-147" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1420" y="1510" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-148" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1350" y="1640" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-149" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1490" y="1630" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="__8k_Y0SE8ekspQ6roql-150" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="1295" y="1780" width="80" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="__8k_Y0SE8ekspQ6roql-151" value="&lt;h1&gt;레벨&amp;nbsp;&lt;/h1&gt;&lt;p&gt;중요한 정보는 내 노드가 레벨 몇까지 노드가 있냐 내 형제 노드들은 레벨 몇까지의 노드가 있냐 이걸 알면 적어도 내 노드가 다시 지나가질 횟수는 알 수 있음&lt;/p&gt;&lt;p&gt;내 왼쪽에 이전 형제가 있나? 있다면 레벨이 몇인가?&amp;nbsp;&lt;/p&gt;&lt;p&gt;내가 0인덱스일 경우에 내 이전레벨 마지막 요소가 레벨이 몇까지 있나?&lt;/p&gt;&lt;p&gt;내가 마지막 인덱스일 경우 내 이후 다음레벨 첫번째 요소가 레벨이 몇까지 있나? 이걸 안다면 적어도 O(1)에 가능함&amp;nbsp;&lt;/p&gt;&lt;p&gt;근데 레벨만드는데 O(n^ 2)가 아닌가?&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="195" y="1840" width="595" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="__8k_Y0SE8ekspQ6roql-152" value="각 레벨별로 반복" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="1007.5" y="1730" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="__8k_Y0SE8ekspQ6roql-154" value="maxleft = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="__8k_Y0SE8ekspQ6roql-155" value="&lt;h1&gt;Heading&lt;/h1&gt;&lt;p&gt;쌓아가는건 쉬운데 시발 풀어버리는건 어렵구나&lt;/p&gt;&lt;p&gt;그냥 값만 처리하는 대가인 힙을 쓸까 했는데 또 이게 왼쪽 오른쪽이 은근 중요함 시발놈&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="1595" width="255" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
