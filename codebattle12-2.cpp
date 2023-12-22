@@ -1,16 +1,16 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <queue>
+#include <cstring>
 #include <algorithm>
 using namespace std;
 
 int island[22][22];
-const int MaxNum = 55556;
-int numConstructor[MaxNum];
-int numVertical[MaxNum];
-vector<pair<int, int>> horizontalConstructor[MaxNum];
-vector<pair<int, int>> verticalConstructor[MaxNum];
+int MaxNum = 55556;
+int numConstructor[55556];
+int numVertical[55556];
+vector<pair<int, int>> horizontalConstructor[55556];
+vector<pair<int, int>> verticalConstructor[55556];
 
 int dx[4] {1, -1, 0, 0};
 int dy[4] {0, 0, -1, 1};
@@ -110,7 +110,7 @@ void init(int N, int mMap[20][20]){
 };
 
 int numberOfCandidate(int M, int mStructure[5]){
-    int result;
+    int result = 0;
     int reverse = 0;
     int val = 0 ;
     int minM = 5;
@@ -151,7 +151,6 @@ int numberOfCandidate(int M, int mStructure[5]){
 };
 
 int maxArea(int M, int mStructure[5], int mSeaLevel){
-
     int result = 0;
     int val = 0;
     int reverse = 0;
@@ -288,78 +287,8 @@ int maxArea(int M, int mStructure[5], int mSeaLevel){
         }
     }
 
-    if (!result && !attempt) return -1;
+    if (!result && !attempt) return -1; 
     return result;
     
 };
 
-
-int main(){
-    ios::sync_with_stdio(false), cin.tie(0), cin.tie(0);
-    ifstream cin("codebattle12.txt", ios_base::in);    
-    int tc, ans;
-    cin >> tc >> ans;
-    for (int t = 0; t < tc; t++){
-        int res;
-        int command;
-        cin >> command;
-        for (int pos = 0; pos < command; pos++)
-        {
-            int id;
-            cin >> id;
-            if (id == 1)
-            {
-                int N;
-                int mMap[20][20] = {0, };
-                cin >> N;
-                for (int i = 0; i < N; i++)
-                {
-                    for (int j = 0; j < N; j++)
-                    {
-                        int tmp;
-                        cin >> tmp;
-                        mMap[i][j] = tmp;
-                    }
-                }
-                init(N, mMap);
-            }
-            else if(id == 2)
-            {
-                int N;
-                cin >> N;
-                int mStructure[5] = {0, };
-                for (int i = 0; i < N; i++)
-                {
-                    cin >> mStructure[i];
-                }
-                int ans = numberOfCandidate(N, mStructure);
-                int mAns;
-                cin >> mAns;
-                if (ans == mAns) {cout << ans << ' ' << mAns << '\n';}
-                
-            }
-            else if(id == 3)
-            {
-                int N;
-                int mStructure[5] = {0, };
-                cin >> N;
-                for (int i = 0; i < N; i++)
-                {
-                    cin >> mStructure[i];
-                }
-                int mSeaLevel;
-                cin >> mSeaLevel;
-                int ans = maxArea(N, mStructure, mSeaLevel);
-                int mAns;
-                cin >> mAns;
-                if (ans != mAns) {cout << ans << ' ' << mAns << '\n';}
-                // else {cout << ans << ' ' << mAns << '\n';}
-
-
-
-            }
-        }
-        cout << '#' << t + 1 << ' ' << res << '\n';
-        break;
-    }
-}
