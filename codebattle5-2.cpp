@@ -136,7 +136,6 @@ int bestSoldier(int mTeam)
     int maxNum = 0;
     while ((!maxNum) & (start >= 0) )
     {
-        // Team[mTeam - 1][start].printhead();
         Node* tmpHead = Team[mTeam - 1][start].head;
         while (tmpHead != nullptr)
         {
