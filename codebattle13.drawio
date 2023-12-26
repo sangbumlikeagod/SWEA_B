@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-12-26T05:11:43.301Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.11 Chrome/114.0.5735.289 Electron/25.9.8 Safari/537.36" etag="oq6nLveo67rh_pkNJuce" version="22.1.11" type="device">
+<mxfile host="Electron" modified="2023-12-26T05:30:52.468Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.11 Chrome/114.0.5735.289 Electron/25.9.8 Safari/537.36" etag="cbksbIa_bGFbklr35nv6" version="22.1.11" type="device">
   <diagram name="페이지-1" id="wcfbyo-xKVQX75B1qQKw">
     <mxGraphModel dx="694" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,8 +52,11 @@
         <mxCell id="UVIkGrmq2z2f-xXulSsO-14" value="dp[i + 1][j] = dp[i][j]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="650" y="790" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="UVIkGrmq2z2f-xXulSsO-19" value="return dp[m][n]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="1010" width="120" height="60" as="geometry" />
+        <mxCell id="UVIkGrmq2z2f-xXulSsO-19" value="return res" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="1050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UVIkGrmq2z2f-xXulSsO-23" value="res = max(dp[m][x], dp[x][n])&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="970" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
