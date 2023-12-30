@@ -1,0 +1,196 @@
+<mxfile host="Electron" modified="2023-12-30T13:00:49.006Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="yiuClB_-KAmf897Sai69" version="22.1.16" type="device">
+  <diagram name="페이지-1" id="y9n6uRlDANwSHOxWfQgq">
+    <mxGraphModel dx="1388" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="y5XIOpLBVk4iegMsERQX-1" value="LEFTMOST = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-2" value="RIGHTMOST = 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-3" value="unordered_map&amp;lt;int, int&amp;gt;DEQUE&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="400" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-4" value="map&amp;lt;int, int&amp;gt; Value[5][20]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="480" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-5" value="int JokerValue;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-6" value="&lt;span style=&quot;box-sizing: inherit; padding: 0px; margin: 0px; font-weight: bolder; color: rgb(41, 43, 44); font-family: &amp;quot;Malgun Gothic&amp;quot;, &amp;quot;���� ���&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: inherit; padding: 0px; margin: 0px; font-weight: bolder; color: rgb(41, 43, 44); font-family: &amp;quot;Malgun Gothic&amp;quot;, &amp;quot;���� ���&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: inherit; padding: 0px; margin: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 14pt; list-style-type: none; line-height: 20px;&quot; lang=&quot;EN-US&quot;&gt;&lt;span style=&quot;box-sizing: inherit; padding: 0px; margin: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; list-style-type: none; line-height: 21.46px;&quot;&gt;&amp;nbsp;init(&lt;span style=&quot;box-sizing: inherit; padding: 0px; margin: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; list-style-type: none; line-height: 20px; color: blue;&quot;&gt;int&lt;/span&gt;&amp;nbsp;mJoker,&amp;nbsp;&lt;span style=&quot;box-sizing: inherit; padding: 0px; margin: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; list-style-type: none; line-height: 20px; color: blue;&quot;&gt;int&lt;/span&gt;&amp;nbsp;mNumbers[5])&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="570" width="400" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-7" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 23px;&quot;&gt;JOKERNUM = &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mValue&lt;/span&gt;;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-6">
+          <mxGeometry x="60" y="60" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-8" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 15px; line-height: 23px;&quot;&gt;void &lt;span style=&quot;color: #dcdcaa;&quot;&gt;init&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mJoker&lt;/span&gt;, &lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mNumbers&lt;/span&gt;[&lt;span style=&quot;color: #b5cea8;&quot;&gt;5&lt;/span&gt;])&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="440" width="910" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-10" value="LEFTMOST&lt;br&gt;RIGHTMOST&lt;br&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 23px;&quot;&gt;DEQUE&lt;/div&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 23px;&quot;&gt;MAP 초기화&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="40" y="50" width="200" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-8" source="y5XIOpLBVk4iegMsERQX-11" target="y5XIOpLBVk4iegMsERQX-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-11" value="5회 반복" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="70" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-12" value="DEQUE[LEFTMOST * i] = mNumber[k]" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="70" y="340" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-8" source="y5XIOpLBVk4iegMsERQX-14" target="y5XIOpLBVk4iegMsERQX-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-14" value="i가 0또는 1인가" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="110" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-17" value="1인 경우" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="110" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-8" source="y5XIOpLBVk4iegMsERQX-16" target="y5XIOpLBVk4iegMsERQX-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-16" value="0인 경우" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="110" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-21" value="0번부터 4번까지 조커가 아니면 더한 값 int tmpSum&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="347" y="515" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-33" value="조커의 개수 int isJoker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="347" y="440" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-34" value="0번이 조커가 아니라면 빼고 5번이 조커가 아니라면 더한 tmpSum과 isJoker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="340" y="610" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-36" value="map[isJoker][tmpSum % 20][i] =&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-8">
+          <mxGeometry x="580" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-9" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 15px; line-height: 23px;&quot;&gt;&lt;div style=&quot;line-height: 23px;&quot;&gt;void &lt;span style=&quot;color: #dcdcaa;&quot;&gt;putCards&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mDir&lt;/span&gt;, &lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mNumbers&lt;/span&gt;[&lt;span style=&quot;color: #b5cea8;&quot;&gt;5&lt;/span&gt;])&lt;/div&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="1230" width="1160" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-40" value="0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-9" source="y5XIOpLBVk4iegMsERQX-37" target="y5XIOpLBVk4iegMsERQX-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-42" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-9" source="y5XIOpLBVk4iegMsERQX-37" target="y5XIOpLBVk4iegMsERQX-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-37" value="mDIr이 1인가?" style="whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-9">
+          <mxGeometry x="50" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-9" source="y5XIOpLBVk4iegMsERQX-39" target="y5XIOpLBVk4iegMsERQX-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-39" value="LEFTMOST--" style="whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-9">
+          <mxGeometry x="250" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-9" source="y5XIOpLBVk4iegMsERQX-41" target="y5XIOpLBVk4iegMsERQX-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-41" value="RIGHTMOST++" style="whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-9">
+          <mxGeometry x="50" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-9" source="y5XIOpLBVk4iegMsERQX-48" target="y5XIOpLBVk4iegMsERQX-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-48" value="tmpSum 은 RIGHTMOST - 4 번부터 -1번까지의 합 &amp;amp;&amp;amp; isJoker 은 -4 부터 0번까지 조커의 개수" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-9">
+          <mxGeometry x="190" y="210" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-47" value="5회 반복" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-9">
+          <mxGeometry x="110" y="330" width="490" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-43" value="DEQUE[RIGHTMOST * 5 + i] = mNumber[i]" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-47">
+          <mxGeometry x="50" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-52" value="DEQUE[RIGHTMOST * 5 + i - 4] 이 조커가 아닌가" style="whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-47">
+          <mxGeometry x="30" y="124" width="200" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-53" value="tmpSum과 isJoker에서 뺀다" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-47">
+          <mxGeometry x="60" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-54" value="map[isJoker][tmpSum % 20][RIGHTMOST * 5 + i - 3] = 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-47">
+          <mxGeometry x="150" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-55" value="mNum[i + 1] 이 조커인가" style="whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-47">
+          <mxGeometry x="250" y="124" width="200" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-56" value="tmpSum과 isJoker에서 더한다" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-47">
+          <mxGeometry x="290" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-57" value="5회 반복" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-9">
+          <mxGeometry x="650" y="64" width="490" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-58" value="DEQUE[LEFTMOST * 5 + i] = mNumber[i]" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-57">
+          <mxGeometry x="50" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-59" value="DEQUE[LEFTMOST&amp;nbsp;* 5 + i] 이 조커가 아닌가" style="whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-57">
+          <mxGeometry x="30" y="124" width="200" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-60" value="tmpSum과 isJoker에서 뺀다" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-57">
+          <mxGeometry x="60" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-61" value="map[isJoker][tmpSum % 20][RIGHTMOST * 5 + i] = 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-57">
+          <mxGeometry x="190" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-62" value="rightend가 joker인가" style="whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-57">
+          <mxGeometry x="250" y="230" width="200" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-63" value="tmpSum과 isJoker에서 더한다" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-57">
+          <mxGeometry x="290" y="336" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-66" value="rightend 는 0일때만 Mnum 아닐때는 넘어가는 값" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-57">
+          <mxGeometry x="280" y="146" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="y5XIOpLBVk4iegMsERQX-9" source="y5XIOpLBVk4iegMsERQX-64" target="y5XIOpLBVk4iegMsERQX-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-64" value="tmpSum 은&amp;nbsp; mNum 0번부터 4번까지의 합 &amp;amp;&amp;amp; isJoker 은 조커의 개수" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-9">
+          <mxGeometry x="406" y="70" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-72" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 15px; line-height: 23px;&quot;&gt;int &lt;span style=&quot;color: #dcdcaa;&quot;&gt;findNumber&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mNum&lt;/span&gt;, &lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mNth&lt;/span&gt;, &lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;ret&lt;/span&gt;[&lt;span style=&quot;color: #b5cea8;&quot;&gt;4&lt;/span&gt;])&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="1320" width="820" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-78" value="s" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-72">
+          <mxGeometry x="60" y="81" width="530" height="419" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-76" value="추가 숫자 = i * JOKERNUM" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
+          <mxGeometry x="80" y="45" width="210" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-81" value="target = mNum + 20 - 추가숫자" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
+          <mxGeometry x="125" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-82" value="mNum + 20 - 추가숫자가 19보다 같거나 작은가?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
+          <mxGeometry x="80" y="125" width="230" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-87" value="target = mNum - 추가숫자" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
+          <mxGeometry x="330" y="142.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-88" value="iterator[i] = calculator[i][target]" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
+          <mxGeometry x="107" y="319" width="245" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-90" value="4개 맵의 사이즈가 mNth보다 큰가?" style="rounded=0;whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-72">
+          <mxGeometry x="200" y="536" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-91" value="return 0" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-72">
+          <mxGeometry x="410" y="536" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-93" value="n번 반복" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-72">
+          <mxGeometry x="160" y="620" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-94" value="tmpans = 55000;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-93">
+          <mxGeometry x="50" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-97" value="4개중 가장 작은 값을 구해서 iter.next&lt;br&gt;n++&lt;br&gt;ans = 그 값" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-93">
+          <mxGeometry x="50" y="110" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-92" value="ans = 0;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2560" y="1760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y5XIOpLBVk4iegMsERQX-99" value="ret[i] = DEQUE[ans + i]" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="2210" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
