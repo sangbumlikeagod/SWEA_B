@@ -3,6 +3,7 @@
 #include <vector>
 #include <queue>
 #include <map>
+#include <unordered_map>
 #include <string>
 using namespace std;
 
@@ -16,7 +17,7 @@ public:
     int version;
     int parentversion;
     bool isDeep;
-    map<pair<int, int>, int> NodeMap; 
+    unordered_map<int, pair<int, int>> NodeMap; 
     ArrayNode* parent;
     ArrayNode(int Root, bool Deep) : isRoot(Root), isDeep(Deep), parent(nullptr), version(1), parentversion(0){};
     ArrayNode(int Root, bool Deep, ArrayNode* parent, int parentversion) : isRoot(Root), isDeep(Deep), parent(parent), version(1), parentversion(parentversion){};
@@ -28,7 +29,7 @@ public:
         cout << version << '\t' << parentversion << '\n';
     }
 };
-map<string, ArrayNode*> ArrayTree;
+unordered_map<string, ArrayNode*> ArrayTree;
 
 void init(){
     // 먼저 초기화를 해야될 것
@@ -45,85 +46,55 @@ void makeList(char mName[20], int mLength, int mListValue[200000]){
 
 void copyList(char mDest[20], char mSrc[20], bool mCopy){
     ArrayNode* parentNode = ArrayTree[mSrc];
-    if (!(parentNode->isDeep || parentNode->isRoot)){
-        parentNode = parentNode->parent;
+    if (mCopy)
+    {
+        ArrayTree[mDest] = new ArrayNode(0, mCopy, parentNode, parentNode->version);
     }
-    ArrayTree[mDest] = new ArrayNode(0, mCopy, parentNode, parentNode->version);
+    else 
+    {
+        ArrayTree[mDest] = parentNode;
+    }
 };
+
 
 void updateElement(char mName[20], int mIndex, int mValue){
     ArrayNode* currentNode = ArrayTree[mName];
     // 본인이 깊은복사면 무조건 update는 내맘대로임
-    if (!(currentNode->isDeep || currentNode->isRoot)){
-        currentNode->parentversion++;
-        currentNode = currentNode->parent;      
-    }
-    if (currentNode->isRoot)
-    {
-        currentNode->NodeMap[make_pair(currentNode->version, mIndex)] = MAXLISTNUM[currentNode->isRoot][mIndex];
-        currentNode->version++;
-        MAXLISTNUM[currentNode->isRoot][mIndex] = mValue;
-    } 
-    else if (currentNode->isDeep)
-    {
-        currentNode->version++;
-        currentNode->NodeMap[make_pair(currentNode->version, mIndex)] = mValue;
-    }
-
+    currentNode->version++;
+    currentNode->NodeMap[currentNode->version] = make_pair(mIndex, mValue);
 };
      
 int element(char mName[20], int mIndex){
     ArrayNode* currentNode = ArrayTree[mName];
 
-    if (!(currentNode->parent))
+
+    int versiontmp = currentNode->version;
+    while (versiontmp > 1)
     {
+        // if (currentNode->NodeMap.find(make_pair(versiontmp, mIndex)) != currentNode->NodeMap.end()){
+        if (currentNode->NodeMap.find(versiontmp) != currentNode->NodeMap.end() && currentNode->NodeMap[versiontmp].first == mIndex){
+            return currentNode->NodeMap[versiontmp].second;
+        }     
+        versiontmp--;
+    }
+    if (currentNode->isRoot){
         return MAXLISTNUM[currentNode->isRoot][mIndex];
     }
-    if (!(currentNode->isDeep || currentNode->isRoot)){
-        currentNode = currentNode->parent; 
-        if (currentNode->isRoot) {return MAXLISTNUM[currentNode->isRoot][mIndex];}
-        int versiontmp = currentNode->version;
-        while (versiontmp > 1)
-        {
-            if (currentNode->NodeMap.find(make_pair(versiontmp, mIndex)) != currentNode->NodeMap.end()){
-                return currentNode->NodeMap[make_pair(versiontmp, mIndex)];
-            }     
-            versiontmp--;
-        }
-        
-    }
 
-    while (!(currentNode->parent->isRoot))
+    while (currentNode->parent)
     {
         int versiontmp = currentNode->parentversion;
         while (versiontmp > 1)
         {
-            if (currentNode->parent->NodeMap.find(make_pair(versiontmp, mIndex)) != currentNode->parent->NodeMap.end()){
-                return currentNode->parent->NodeMap[make_pair(versiontmp, mIndex)];
+            if (currentNode->parent->NodeMap.find(versiontmp) != currentNode->parent->NodeMap.end() && currentNode->parent->NodeMap[versiontmp].first == mIndex){
+                return currentNode->parent->NodeMap[versiontmp].second;
             }     
             versiontmp--;
         }
+        if (currentNode->parent->isRoot){
+            return MAXLISTNUM[currentNode->parent->isRoot][mIndex];
+        }
         currentNode = currentNode->parent;
-    }
-
-    int versiontmp = currentNode->parentversion;
-    while (versiontmp >= 1)
-    {
-        if (currentNode->parent->NodeMap.find(make_pair(versiontmp, mIndex)) != currentNode->parent->NodeMap.end()){
-            return currentNode->parent->NodeMap[make_pair(versiontmp, mIndex)];
-        }     
-        versiontmp--;
-    }
-
-    if (currentNode->parent->NodeMap.find(make_pair(currentNode->parentversion, mIndex)) != currentNode->parent->NodeMap.end())
-    {
-        return currentNode->parent->NodeMap[make_pair(currentNode->parentversion, mIndex)];
-    }
-
-    
-    else 
-    {
-        return MAXLISTNUM[currentNode->parent->isRoot][mIndex];
     }
 };
 
@@ -145,12 +116,13 @@ int main(){
     int py[5] = {24524, 24580, 6350, 19398, 15849};
     char s1[2] = "a";
     makeList(s1, 5, py);
-    ArrayTree[s1]->debug();
+    // ArrayTree[s1]->debug();
 
     cout << element(s1, 4) << '\n';
     char s2[2] = "b";
     copyList(s2, s1, false);
     updateElement(s2, 1, 23);
+    cout << ArrayTree["b"]->isRoot << '\n';
     cout << element(s1, 1) << '\n';
     char s3[2] = "c";
     copyList(s3, s2, true);
@@ -159,6 +131,6 @@ int main(){
     updateElement(s1, 0, 99);
     cout << element(s3, 0) << '\n';
     cout << element(s3, 1) << '\n' << '\n';
-    ArrayTree[s1]->debug();
-    ArrayTree[s3]->debug();
+    // ArrayTree[s1]->debug();
+    // ArrayTree[s3]->debug();
 }
