@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-12-30T12:58:40.292Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="-_qid17z3pBB7-NLtZ9m" version="22.1.16" type="device">
+<mxfile host="Electron" modified="2023-12-30T13:00:49.006Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="yiuClB_-KAmf897Sai69" version="22.1.16" type="device">
   <diagram name="페이지-1" id="y9n6uRlDANwSHOxWfQgq">
     <mxGraphModel dx="1388" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -151,7 +151,7 @@
         <mxCell id="y5XIOpLBVk4iegMsERQX-72" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 15px; line-height: 23px;&quot;&gt;int &lt;span style=&quot;color: #dcdcaa;&quot;&gt;findNumber&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mNum&lt;/span&gt;, &lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;mNth&lt;/span&gt;, &lt;span style=&quot;color: #569cd6;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;ret&lt;/span&gt;[&lt;span style=&quot;color: #b5cea8;&quot;&gt;4&lt;/span&gt;])&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1950" y="1320" width="820" height="1000" as="geometry" />
         </mxCell>
-        <mxCell id="y5XIOpLBVk4iegMsERQX-78" value="5회 반복" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-72">
+        <mxCell id="y5XIOpLBVk4iegMsERQX-78" value="s" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-72">
           <mxGeometry x="60" y="81" width="530" height="419" as="geometry" />
         </mxCell>
         <mxCell id="y5XIOpLBVk4iegMsERQX-76" value="추가 숫자 = i * JOKERNUM" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
@@ -166,7 +166,7 @@
         <mxCell id="y5XIOpLBVk4iegMsERQX-87" value="target = mNum - 추가숫자" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
           <mxGeometry x="330" y="142.5" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="y5XIOpLBVk4iegMsERQX-88" value="iterator[i] = calculator[i]" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
+        <mxCell id="y5XIOpLBVk4iegMsERQX-88" value="iterator[i] = calculator[i][target]" style="whiteSpace=wrap;html=1;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-78">
           <mxGeometry x="107" y="319" width="245" height="71" as="geometry" />
         </mxCell>
         <mxCell id="y5XIOpLBVk4iegMsERQX-90" value="4개 맵의 사이즈가 mNth보다 큰가?" style="rounded=0;whiteSpace=wrap;html=1;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="y5XIOpLBVk4iegMsERQX-72">
