@@ -12,9 +12,13 @@ public:
     int recruit;
     vector<int> child;
 
-    Union(int c) : recruit(0), anti({0})
+    Union(int c) : recruit(0)
     {
         child.push_back(c);
+        for (int i = 0; i < 625; i++)
+        {
+            anti[i] = 0;
+        }
     }
 };
 
@@ -72,7 +76,7 @@ int ally(char mMonarchA[11], char mMonarchB[11])
     {
         swap(unionA, unionB);
     }
-    if ((unionList[unionA]->anti)[unionB] = 1)
+    if ((unionList[unionA]->anti)[unionB] == 1)
     {
         return -2;
     }
@@ -102,8 +106,8 @@ int attack(char mMonarchA[11], char mMonarchB[11], char mGeneral[11])
     (unionList[unionB]->anti)[unionA] = 1;
 
     bool isThereEnemy = false;
-    int x = indexA / maxN;
-    int y = indexA % maxN;
+    int x = indexB / maxN;
+    int y = indexB % maxN;
     for (int i = 0; i < 8; i++)
     {
         int nx = x + dx[i];
@@ -128,20 +132,23 @@ int attack(char mMonarchA[11], char mMonarchB[11], char mGeneral[11])
     {
         int nx = x + dx[i];
         int ny = y + dy[i];
-        if (monarchUnion[nx * maxN + ny] == unionA)
+        if (0 <= nx && nx < maxN && 0 <= ny && ny < maxN)
         {
-            int half = (Soilders[nx * maxN + ny] + unionList[unionA]->recruit) / 2;
-            Soilders[nx * maxN + ny] -= half;
-            offense += half;
-        }
-        else if (monarchUnion[nx * maxN + ny] == unionA)
-        {
-            int half = (Soilders[nx * maxN + ny] + unionList[unionB]->recruit) / 2;
-            Soilders[nx * maxN + ny] -= half;
-            defense += half;
+            if (monarchUnion[nx * maxN + ny] == unionA)
+            {
+                int half = (Soilders[nx * maxN + ny] + unionList[unionA]->recruit) / 2;
+                Soilders[nx * maxN + ny] -= half;
+                offense += half;
+            }
+            else if (monarchUnion[nx * maxN + ny] == unionB)
+            {
+                int half = (Soilders[nx * maxN + ny] + unionList[unionB]->recruit) / 2;
+                Soilders[nx * maxN + ny] -= half;
+                defense += half;
+            }
         }
     }
-    Union *uB;
+    Union *uB = unionList[unionB];
     if (offense > defense)
     {
         indexing.erase(mMonarchB);
@@ -172,7 +179,8 @@ int recruit(char mMonarch[11], int mNum, int mOption)
     if (mOption)
     {
         int re = 0;
-        Union *u = unionList[index];
+        Union *u = unionList[monarchUnion[index]];
+        u->recruit += mNum;
         for (int child : u->child)
         {
             re += Soilders[child] + u->recruit;
