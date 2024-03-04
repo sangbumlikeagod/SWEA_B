@@ -49,6 +49,7 @@ public:
     {
         Node *tmp = Head->next;
         Head->next = Head->next->next;
+        Head->next->before = Head;
         tmp->before = nullptr;
         tmp->next = nullptr;
         length--;
@@ -97,7 +98,7 @@ public:
         Node *Htmp = Head;
         Node *Ttmp = Tail;
 
-        while (Htmp < Ttmp)
+        while (Htmp <= Ttmp)
         {
             if ((*Htmp) < (*node) && (*node) < (*Htmp->next))
             {
@@ -169,18 +170,26 @@ public:
     {
         Node *tmp = left->popHead();
         // this->balancing();
+        tmp->before = nullptr;
+        tmp->next = nullptr;
         return tmp;
     }
     Node *popRightTail()
     {
         Node *tmp = right->popTail();
-        this->balancing();
+        // this->balancing();
+        tmp->before = nullptr;
+        tmp->next = nullptr;
+
         return tmp;
     }
     Node *popRightHead()
     {
         Node *tmp = right->popHead();
         this->balancing();
+        tmp->before = nullptr;
+        tmp->next = nullptr;
+
         return tmp;
     }
     void insertPlayer(Node *node)
@@ -242,8 +251,8 @@ void init(int N, int L, int mAbility[])
                 totalSeason[i]->insertRight(PlayerList[j]);
             }
         }
-        totalSeason[i]->debugging();
-        cout << '\n';
+        // totalSeason[i]->debugging();
+        // cout << '\n';
     }
     return;
 }
@@ -257,12 +266,12 @@ int move()
     rightReceive[0] = nullptr;
     for (int i = 0; i < Teams; i++)
     {
-        if (i != 0)
+        if (i != Teams - 1)
         {
             leftReceive[i - 1] = totalSeason[i]->popLeftHead();
             ans += leftReceive[i - 1]->id;
         }
-        if (i != Teams - 1)
+        if (i != 0)
         {
             rightReceive[i + 1] = totalSeason[i]->popRightTail();
             ans += rightReceive[i + 1]->id;
@@ -274,10 +283,12 @@ int move()
     {
         if (leftReceive[i])
         {
+            cout << leftReceive[i]->val << '\t';
             totalSeason[i]->insertPlayer(leftReceive[i]);
         }
         if (rightReceive[i])
         {
+            cout << rightReceive[i]->val << '\t';
             totalSeason[i]->insertPlayer(rightReceive[i]);
         }
         totalSeason[i]->debugging();
@@ -328,7 +339,10 @@ int main()
         init(15, 3, mAbility);
         cout << '\n';
         cout << move();
-
+        // cout << '\n';
+        // cout << move();
+        // cout << '\n'
+        //      << trade();
         // for (int i = 0; i < 3; i++)
         // {
         //     cout << totalSeason[i]->size() << '\t' << totalSeason[i]->popLeftHead()->val << '\t';
